@@ -1,0 +1,113 @@
+.peach{
+    color: #F58F7C;
+    font-size: 30px;
+    max-width: auto;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #F58F7C;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #666;
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-progress-piece {
+    background-color: #F58F7C;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-progress-piece:start {
+    margin: 0 0 10px 0;
+  }
+  
+  ::-webkit-scrollbar-progress-piece:end {
+    margin: 10px 0 0 0;
+  }
+  .card-body{
+    min-height: "wrap-content";
+  }
+.card-title{
+    font-weight: 700;
+}
+.container-fluid {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.row {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+#projects{
+    background-color: #121212;
+}
+#done{
+    text-align: center;
+    font-weight: bold;  
+}
+#projects .card{
+//     background-color: #3c3c3f;
+//     box-shadow: 5px 10px 8px 5px #252323;
+//     font-size: 20px;
+//     font-weight: 600;
+//     padding: 10%;
+//     margin: 20px;
+//     border-bottom: #F2C4CE 10px solid;
+background: white;
+border-radius: 8px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+cursor: pointer;
+height: 300px;
+margin: 20px;
+padding: 0 20px;
+position: relative;
+-webkit-tap-highlight-color: rgba(0,0,0,0.025);
+text-align: center;
+transition: height 1000ms;
+width: 260px;
+}
+#projects .card:hover{
+    background-color: #F58F7C;
+    color: #2E2E31;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+
+}
+#projects .btn{
+    border: #2E2E31 2px solid;
+    box-shadow: 5px 10px 8px 5px #252323;
+    padding: 10px;
+    background-color: #2E2E31;
+    color: #F58F7C;
+    font-weight: bolder;  
+    background-position: left bottom;  
+}
+#projects .btn:hover{
+    padding: 10px;
+    background-color: #F58F7C;
+    color: #2E2E31;
+    font-weight: bolder;
+    transform: scale(1.2);
+}
