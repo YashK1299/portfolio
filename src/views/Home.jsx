@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 // import heroBg from "../assets/webdev.svg";
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
-import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import home from "../assets/home.png";
@@ -11,8 +10,6 @@ import { flattenOptionGroups } from "@mui/base";
 import { style } from "@mui/system";
 
 const Home = () => {
-  const theme = useContext(ThemeContext);
-  const darkMode = theme.state.darkMode;
 
 const styles = {
   container: {

@@ -3,25 +3,32 @@ import { gigs } from "../constants.js";
 
 const Projects = () => {
 
+
   return (
-      <div id="projects" class="container-fluid">
+      <div id="projects">
         <div id="done">
           <p class="peach">My Projects </p>
         </div>
         <div class="row">
           {
             gigs.map((card) => (
-              <div class="col-12 col-md-6 col-lg-4 mb-5"  key={card.name}>
-                <div class="card h-100">
-                  <img src={card.img} class="card-img-top" alt="..." />
+              <div class="card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src={card.img} class="card-img-top" alt="..." /><br/>
+                    <div class="card-body">
+                      <h3 class="card-title">{card.name}</h3>
+                    </div>
+                </div>
+                <div class="flip-card-back" onClick={() => window.open(card.link, 'mywindow')}>
                   <div class="card-body">
-                    <h3 class="card-title">{card.name}</h3><br/>
+                    <h3 class="card-title">{card.name}</h3>
                     <p class="card-text">{card.desc}</p>
-                    <a href={card.link} class="btn">View Project</a>
                   </div>
                 </div>
+                </div>
               </div>
-          ))}
+            ))}
         </div>
       </div>
   );
