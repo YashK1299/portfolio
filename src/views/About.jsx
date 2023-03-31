@@ -15,14 +15,14 @@ const About = () => {
             <div class="app-title">Software Engineer</div>
             <div class="app-contact">
               <p>
-                I'm a self-taught web developer and Mobile App Developer with
-                experience in designing new features from ideation to production,
-                implementation of wireframes and design flows into high
-                performance software applications. I take into consideration the
-                user experience while writing reusable and efficient code. I
-                passionately combine good design, technology, and innovation in
-                all my projects, which I like to accompany from the first idea to
-                release.Currently, I'm focused on the backend development.
+              I grew up in Mumbai, India, and now find myself 'across the pond' as a graduate 
+              student at Northeastern University, Boston, where I soak in nature, history, and 
+              people while pursuing my degree in Computer Science. I am passionate about 
+              Software Development and have a decent knowledge of programming languages such as 
+              Python, Java, C, SQL, Javascript. I exhibit an entrepreneurial mentality and am 
+              eager to learn and adapt to different environments. I am seeking creative and 
+              challenging full-time opportunities and I am ready to join as soon as possible, 
+              and would love to connect with you!
               </p>
             </div>
             <div class="app-title">

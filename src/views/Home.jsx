@@ -87,23 +87,6 @@ const styles = {
             </div>
             </div>
         </div>
-        <motion.img
-          initial="hidden"
-          whileInView={"visible"}
-          variants={{
-            visible: {
-              y: 0,
-              opacity: 1,
-              transition: {
-                type: "spring",
-              },
-            },
-            hidden: { opacity: 1, y: 80 },
-          }}
-          // src={heroBg}
-          alt=""
-          className="md:w-3/6 hidden sm:block"
-        />
         </div>
         </>
   );

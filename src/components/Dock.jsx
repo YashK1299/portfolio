@@ -43,6 +43,8 @@ const useStyles = makeStyles((theme) => ({
   },
   modal: {
     display: "flex",
+    backgroundColor: "transparent",
+    color: "transparent",
     alignItems: "center",
     justifyContent: "center",
     zIndex: "999",
@@ -62,27 +64,27 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SimpleDialog = ({ open, onClose, children }) => {
+const SimpleDialog = ({ open, onClose, id, children }) => {
   const classes = useStyles();
 
   return (
     <Dialog open={open} onClose={onClose} maxWidth="lg" className={classes.modal}>
-<IconButton
-  aria-label="close"
-  onClick={onClose}
-  sx={{
-    position: 'absolute',
-    right: 8,
-    top: 8,
-    color: (theme) => theme.palette.grey[500],
-    bgcolor: 'transparent',
-    '&:hover': {
-      bgcolor: (theme) => theme.palette.grey[100],
-    },
-  }}
->
-  <CloseIcon />
-</IconButton>
+      <IconButton
+        aria-label="close"
+        onClick={onClose}
+        sx={{
+          position: 'absolute',
+          right: 8,
+          top: 8,
+          color: (theme) => theme.palette.grey[500],
+          bgcolor: 'transparent',
+          '&:hover': {
+            bgcolor: (theme) => theme.palette.grey[100],
+          },
+        }}
+      >
+        <CloseIcon />
+      </IconButton>
       <div className={classes.paper}>{children}</div>
     </Dialog>
   );
@@ -104,7 +106,7 @@ const Dock = () => {
   const renderTab = () => {
     switch (value) {
       case 0:
-        return <Launch />;
+        return <Launch onClose={handleClose} onOpen={handleOpen} value={setValue} dialog={SimpleDialog} />;
       case 1:
         return <About />;
       case 2:
@@ -121,7 +123,7 @@ const Dock = () => {
   return (
     <>
     <div>
-    <SimpleDialog open={open} onClose={handleClose}>
+    <SimpleDialog id={value} open={open} onClose={handleClose}>
       {renderTab()}
       </SimpleDialog>
       </div>
@@ -148,7 +150,7 @@ const Dock = () => {
             value={1}
           />
         </Tooltip>
-        <Tooltip title="whatido">
+        <Tooltip title="whatidid">
           <BottomNavigationAction
             icon={<MdComputer className={classes.icon} />} disableTouchRipple
             value={2}

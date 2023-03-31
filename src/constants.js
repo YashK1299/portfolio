@@ -1,3 +1,13 @@
+import amazon from "./assets/amazon.svg";
+import spit from "./assets/spit.png";
+import quidich from "./assets/quidich.jpg";
+import squark from "./assets/squark.jpeg";
+import lynx from "./assets/lynx.png";
+import portfolio from "./assets/portfolio.png";
+import itms from "./assets/itms.png";
+import bscan from "./assets/bscan.jpeg";
+import issueTracker from "./assets/issue-tracker.png";
+
 export const techStack = [
   { name: "Python", color: "blue", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"},
   { name: "Java", color: "orange", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"},
@@ -77,126 +87,120 @@ export const techStack = [
 
 
 export const contactLinks = [
-{ name: 'Github', url: 'https://img.icons8.com/doodle/40/000000/github--v1.png', link :'https://github.com/YashK1299'},
-{ name: 'LinkedIn', url: 'https://img.icons8.com/doodle/40/000000/linkedin--v2.png', link: 'https://www.linkedin.com/in/yash-kothari1'},
-{ name: 'Mail', url: 'https://img.icons8.com/doodle/48/null/apple-mail.png', link: 'mailto:kothariwork@gmail.com'},
-{ name: 'Instagram', url: 'https://img.icons8.com/doodle/40/000000/instagram-new--v2.png', link: 'https://ig.me/m/yashk_' },
+  { name: 'Github', url: 'https://img.icons8.com/doodle/40/000000/github--v1.png', link :'https://github.com/YashK1299'},
+  { name: 'LinkedIn', url: 'https://img.icons8.com/doodle/40/000000/linkedin--v2.png', link: 'https://www.linkedin.com/in/yash-kothari1'},
+  { name: 'Mail', url: 'https://img.icons8.com/doodle/48/null/apple-mail.png', link: 'mailto:kothariwork@gmail.com'},
+  { name: 'Instagram', url: 'https://img.icons8.com/doodle/40/000000/instagram-new--v2.png', link: 'https://ig.me/m/yashk_' },
 ]
 
 
 export const gigs = [
   {
-    name: 'Web Application Development',
-    desc: 'Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design  authoring, including standardised code and proprietary software user experience design and search engine',
-    img: "https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png",
-    link: "www.google.com",
+    name: 'Intelligent Traffic Management System',
+    desc: `A project as an attempt to manage traffic in a city using modern Computer Vision, 
+    IoT and Machine Learning Technologies, and Traffic Engineering. Leveraging the power of 
+    open source technologies like OpenCV, Yolo, Tkinter, Python, etc.`,
+    img: itms,
+    link: "https://github.com/YashK1299/Intelligent_Traffic_Management_System",
   },
   {
-    name: 'Mobile Application Development',
-    desc: `We provide a range of mobile application development services
-    including custom mobile development on Android platforms, building
-    cross-platform apps, designing user experience and integrating
-    novel mobile interfaces such as chat and voice`,
-    img: "https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png",
-    link: "https://www.linkedin.com/in/yash-kothari1",
+    name: 'My Personal Website',
+    desc: `A website built leveraging my non existent creative skills along with my coding 
+    skills to showcase my work so that I can confidently call my self a Software Developer.`,
+    img: portfolio,
+    link: "https://github.com/YashK1299/portfolio",
   },
   {
-    name: 'Backend Development',
+    name: 'BScan',
     desc: `Graphic design is a craft where professionals create visual
     content to communicate messages. By applying visual hierarchy and
     page layout techniques, designers use typography and pictures to
     meet users' specific needs and focus on the logic of displaying
     elements in interactive designs, to optimize the user experience.`,
-    img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png",
-    link: "https://www.linkedin.com/in/yash-kothari1",
+    img: bscan,
+    link: "https://github.com/YashK1299/BScan",
   },
   {
-    name: 'Backend Development',
+    name: 'Issue Tracker',
+    desc: `This is a full-stack web application that allows users to track and manage issues. 
+    It is built using the MERN stack and features user authentication and authorization, CRUD operations, 
+    and a RESTful API. It also employs various design patterns, such as container/presentation 
+    components, and uses Redux for state management.`,
+    img: issueTracker,
+    link: "https://github.com/YashK1299/tracker-ui",
+  },
+]
+
+
+export const work = [
+  {
+    name: 'Lynx',
+    title: 'Tech Lead',
+    desc: `Leading the tech team of a social platform to help groups of people connect 
+    and have fun together. It is a platform where people can
+    create groups and invite their friends to join them.`,
+    img: lynx,
+    time: "Jan 2023 – Present",
+  },
+  {
+    name: 'Amazon',
+    title: 'Software Dev Engineer',
+    desc: `I worked as a Software Dev Engineer in the Supply Chain Optimization 
+    Technologies. My work involved the development of AWS CDK-based infra, 
+    creating CDK packages and CI/CD pipelines using monocdk and cdk-lib, which greatly 
+    improved infrastructure provisioning and deployment efficiency.`,
+    img: amazon,
+    time: "Sept 2022 – Mar 2023",
+  },
+  {
+    name: 'Google',
+    title: 'Software Engineering Intern',
+    desc: `I interned with the Google Maps team as a Software Engineering Intern,
+    contributing a new POI-Hotels feature for Android Google Maps Mobile (aGMM), 
+    providing users with insights based on their current location.`,
+    img: "https://img.icons8.com/plasticine/100/null/google-maps.png",
+    time: "June 2022 – Sept 2022",
+  },
+  {
+    name: 'Squark/Northeastern University',
+    title: 'Graduate Research Assistant',
+    desc: `My work at Squak.ai as a Graduate Research Assistant aimed at creating an AutoML 
+    pipeline that can process any structured timeseries dataset with no/minimal human intervention,
+    using algorithms designed by the team and developing APIs to make the pipeline accessible using
+    their web app.`,
+    img: squark,
+    time: "June 2021 – May 2022",
+  },
+  {
+    name: 'Northeastern University',
+    title: 'Master of Science in Computer Science Student',
+    desc: `My education at NEU gave me the much needed confidence in my Computer Science skills and 
+    helped me develop a strong foundation in the field. It helped open up a lot of opportunities for 
+    me and make me capable enough to take advantage these opportunities. Here I have taken up courses like:
+    Algorithms, DBMS, Web Dev(MERN Stack), Program Design Paradigm, Foundations of Software Engineering`,
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Northeastern_Huskies_.svg",
+    time: "Jan 2021 – May 2022",
+  },
+  {
+    name: 'Quidich Innovation Labs',
+    title: 'Python Developer Intern',
     desc: `Graphic design is a craft where professionals create visual
     content to communicate messages. By applying visual hierarchy and
     page layout techniques, designers use typography and pictures to
     meet users' specific needs and focus on the logic of displaying
     elements in interactive designs, to optimize the user experience.`,
-    img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png",
-    link: "https://www.linkedin.com/in/yash-kothari1",
-  },
-  ]
-
-
-  export const work = [
-    {
-      name: 'Web Application Development',
-      desc: 'Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design  authoring, including standardised code and proprietary software user experience design and search engine',
-      img: "https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png",
-      time: "June 2022 – Sept 2022",
-    },
-    {
-      name: 'Mobile Application Development',
-      desc: `We provide a range of mobile application development services
-      including custom mobile development on Android platforms, building
-      cross-platform apps, designing user experience and integrating
-      novel mobile interfaces such as chat and voice`,
-      img: "https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png",
-      time: "June 2022 – Sept 2022",
-    },
-    {
-      name: 'Backend Development',
-      desc: `Graphic design is a craft where professionals create visual
-      content to communicate messages. By applying visual hierarchy and
-      page layout techniques, designers use typography and pictures to
-      meet users' specific needs and focus on the logic of displaying
-      elements in interactive designs, to optimize the user experience.`,
-      img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png",
-      time: "June 2022 – Sept 2022",
-    },
-    {
-      name: 'Backend Development',
-      desc: `Graphic design is a craft where professionals create visual
-      content to communicate messages. By applying visual hierarchy and
-      page layout techniques, designers use typography and pictures to
-      meet users' specific needs and focus on the logic of displaying
-      elements in interactive designs, to optimize the user experience.`,
-      img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png",
-      time: "June – Sept 2022",
-    },
-    {
-      name: 'Backend Development',
-      desc: `Graphic design is a craft where professionals create visual
-      content to communicate messages. By applying visual hierarchy and
-      page layout techniques, designers use typography and pictures to
-      meet users' specific needs and focus on the logic of displaying
-      elements in interactive designs, to optimize the user experience.`,
-      img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png",
-      time: "June 2022 – Sept 2022",
-    },
-    ]
-
-
-export const serviceData = [
-  {
-    name: 'Web Application Development',
-    desc: 'Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design  authoring, including standardised code and proprietary software user experience design and search engine',
-    img: "https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png",
-    link: "https://www.linkedin.com/in/yash-kothari1",
+    img: quidich,
+    time: "June 2019 – July 2019",
   },
   {
-    name: 'Mobile Application Development',
-    desc: `We provide a range of mobile application development services
-    including custom mobile development on Android platforms, building
-    cross-platform apps, designing user experience and integrating
-    novel mobile interfaces such as chat and voice`,
-    img: "https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png",
-    link: "https://www.linkedin.com/in/yash-kothari1",
-  },
-
-  {
-    name: 'Backend Development',
-    desc: `Graphic design is a craft where professionals create visual
-    content to communicate messages. By applying visual hierarchy and
-    page layout techniques, designers use typography and pictures to
-    meet users' specific needs and focus on the logic of displaying
-    elements in interactive designs, to optimize the user experience.`,
-    img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png",
-    link: "https://www.linkedin.com/in/yash-kothari1",
+    name: 'Sardar Patel Institute of Technology',
+    title: `Bachelor's of Engineering in Electronics and Telecommunications`,
+    desc: `My education at SPIT set my strong base as an Engineer and helped me develop a strong foundation in the field.
+    It introduced me to the C programming Language that I used to develop my first ever project, a simple hand cricket game.
+    This project further motivated me to teach myself Java and Python, which I further used to develop my other projects.
+    Here I have taken up courses like: Structured Programming Approach (C), Object Oriented Design (Java), Data-Structures, 
+    ML and AI, Cloud computing`,
+    img: spit,
+    time: "August 2016 – Sept 2020",
   },
 ]

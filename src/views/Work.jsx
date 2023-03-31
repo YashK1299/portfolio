@@ -13,7 +13,8 @@ const Work = () => {
                                 <div class="circle"><span class="homebox"><img src={card.img} class="img" alt="..."/></span></div>
                                 <div class="content">
                                     <span class="year">{card.time}</span>
-                                    <h3 class="title h3">{card.name}</h3>
+                                    <h3 class="title">{card.name}</h3>
+                                    <h4 class="role">{card.title}</h4>
                                     <p class="description">{card.desc}</p>
                                     <div class="icon"><span></span></div>
                                 </div>

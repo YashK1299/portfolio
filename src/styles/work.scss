@@ -1,36 +1,37 @@
-  /* Set the border color to light gray */
-  .main-timeline:before,
-  .main-timeline .timeline:first-child:before,
-  .main-timeline .timeline:last-child:before,
-  .main-timeline .timeline:nth-child(2n) .circle:before,
-  .main-timeline .icon:before,
-  .main-timeline .icon span:before {
-    border-color: #d3cfcd;
-  }
-  
-  /* Set the text color to light gray */
-  .main-timeline .year,
-  .main-timeline .title,
-  .main-timeline .description {
-    color: #d3cfcdaa;
-  }
-  
-  /* Set the circle background color to dark gray */
-  .main-timeline .circle {
-    background-color: #2b2b2b;
-  }
-  
-  /* Set the border color to light gray */
-  .main-timeline .circle:before,
-  .main-timeline .circle span:after,
-  .main-timeline .icon span:after {
-    background-color: #d3cfcdaa;
-  }
-  
-  /* Set the span color to white */
-  .main-timeline .circle span {
-    color: #000;
-  }
+/* Set the border color to light gray */
+.main-timeline:before,
+.main-timeline .timeline:first-child:before,
+.main-timeline .timeline:last-child:before,
+.main-timeline .timeline:nth-child(2n) .circle:before,
+.main-timeline .icon:before,
+.main-timeline .icon span:before {
+border-color: #d3cfcd;
+}
+
+/* Set the text color to light gray */
+.main-timeline .year,
+.main-timeline .title,
+.main-timeline .role,
+.main-timeline .description {
+color: #d3cfcdaa;
+}
+
+/* Set the circle background color to dark gray */
+.main-timeline .circle {
+background-color: #2b2b2b;
+}
+
+/* Set the border color to light gray */
+.main-timeline .circle:before,
+.main-timeline .circle span:after,
+.main-timeline .icon span:after {
+background-color: #d3cfcdaa;
+}
+
+/* Set the span color to white */
+.main-timeline .circle span {
+color: #000;
+}
 .main-timeline{ position: relative; }
 .main-timeline:before,
 .main-timeline:after{
@@ -181,8 +182,15 @@
     color: rgba(211,207,205,1);
     margin-top: 0;
 }
+.main-timeline .role{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(211,207,205,1);
+    margin-top: 0;
+}
 .main-timeline .description{
     font-size: 14px;
+    font-weight: bold;
     color: #333;
     text-align: justify;
 }

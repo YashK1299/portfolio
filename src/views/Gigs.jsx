@@ -7,7 +7,7 @@ const Projects = () => {
   return (
       <div id="projects">
         <div id="done">
-          <p class="peach">My Projects </p>
+          <p class="peach">My Projects and Blogs</p>
         </div>
         <div class="row">
           {
@@ -24,6 +24,7 @@ const Projects = () => {
                   <div class="card-body">
                     <h3 class="card-title">{card.name}</h3>
                     <p class="card-text">{card.desc}</p>
+                    <p class="credits">Click tile to view project</p>
                   </div>
                 </div>
                 </div>
