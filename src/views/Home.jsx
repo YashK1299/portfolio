@@ -126,6 +126,8 @@ const styles = {
               contactLinks.map((el) => (
               <a
                 href={el.link}
+                rel="noreferrer"
+                target="_blank"
                 className="mr-5 cursor-pointer mt-8 hover:scale-125"
               >
                 <img alt="" src={el.url} />
