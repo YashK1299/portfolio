@@ -1,6 +1,6 @@
 import "../styles/contact.css";
 import emailjs from "@emailjs/browser";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { contactLinks } from "../constants";
 // import { env } from "../index";
 // import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_USER_ID } from "@.env";
