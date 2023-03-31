@@ -1,15 +1,68 @@
-import React, { useContext } from "react";
-// import heroBg from "../assets/webdev.svg";
-import Typical from "react-typical";
+import React from "react";
+// import Resume from "./Resume";
+import resume from "../assets/resume.pdf";
 import { contactLinks } from "../constants";
-import { motion } from "framer-motion";
-import { Link } from "react-scroll";
 import home from "../assets/home.png";
 import whoami from "../assets/whoami.png";
-import { flattenOptionGroups } from "@mui/base";
-import { style } from "@mui/system";
+// import { Dialog, IconButton } from "@mui/material";
+// import CloseIcon from "@mui/icons-material/Close";
+// import Button from '@mui/material/Button';
+// import { makeStyles } from "@material-ui/core/styles";
+
+// const useStyles = makeStyles((theme) => ({
+//   modal: {
+//     display: "flex",
+//     backgroundColor: "transparent",
+//     color: "transparent",
+//     alignItems: "center",
+//     justifyContent: "center",
+//     zIndex: "999",
+//     maxHeight: "90%",
+//   },
+//   paper: {
+//     backgroundColor: "#000",
+//     boxShadow: theme.shadows[5],
+//     overflow: "auto",
+//     outline: "none",
+//   },
+// }));
+
+// const SimpleDialog = ({ open, onClose, id, children }) => {
+//   const classes = useStyles();
+
+//   return (
+//     <Dialog open={open} onClose={onClose} maxWidth="lg" className={classes.modal}>
+//       <IconButton
+//         aria-label="close"
+//         onClick={onClose}
+//         sx={{
+//           position: 'absolute',
+//           right: 8,
+//           top: 8,
+//           color: (theme) => theme.palette.grey[500],
+//           bgcolor: 'transparent',
+//           '&:hover': {
+//             bgcolor: (theme) => theme.palette.grey[100],
+//           },
+//         }}
+//       >
+//         <CloseIcon />
+//       </IconButton>
+//       <div className={classes.paper}><Resume /></div>
+//     </Dialog>
+//   );
+// };
 
 const Home = () => {
+  // const [open, setOpen] = React.useState(false);
+
+  // const handleClickOpen = () => {
+  //   setOpen(true);
+  // };
+
+  // const handleClose = (value) => {
+  //   setOpen(false);
+  // };
 
 const styles = {
   container: {
@@ -77,18 +130,29 @@ const styles = {
               >
                 <img alt="" src={el.url} />
               </a>
-            ))}
+            ))}<a
+                href={resume}
+                className="mr-5 cursor-pointer mt-8 hover:scale-125"
+                download
+              >
+                <img alt="" src="https://img.icons8.com/bubbles/50/null/resume.png" />
+              </a>
           </div>
-          <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+          {/* Resume dialog */}
+          {/* <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
-              <Link className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
+              <Button variant="outlined" onClick={handleClickOpen}>
                 Resume
-              </Link>
+              </Button>
+              <SimpleDialog
+                open={open}
+                onClose={handleClose}
+              />
             </div>
-            </div>
+          </div> */}
         </div>
-        </div>
-        </>
+      </div>
+    </>
   );
 };
 

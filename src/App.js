@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Dock from "./components/Dock";
 import Home from './views/Home'
 import LoadingScreen from "./components/LoadingScreen";
-import { ThemeProvider } from "./themeProvider";
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -10,7 +9,7 @@ function App() {
     setTimeout(() => setLoading(false), 100)
   }, [])
   return (
-    <ThemeProvider>
+    <div>
       <>
         {!loading ? (
           <div >
@@ -22,7 +21,7 @@ function App() {
           <LoadingScreen />
         )}
       </>
-    </ThemeProvider>
+    </div>
 
   );
 }
