@@ -108,7 +108,7 @@ export const gigs = [
     desc: `A website built leveraging my non existent creative skills along with my coding 
     skills to showcase my work so that I can confidently call my self a Software Developer.`,
     img: portfolio,
-    link: "https://github.com/YashK1299/portfolio",
+    link: "https://yash-kothari.netlify.app/",
   },
   {
     name: 'BScan',
