@@ -17,7 +17,7 @@ const Projects = ({ onClose, onOpen, setValue, dialog }) => {
               <p className="text">Actions</p>
             </div>
             <div className="buttonbox" onClick={ () => { 
-              navigator.clipboard.writeText('https://yash-kothari.netlify.app/');
+              navigator.clipboard.writeText('https://yashk1299.github.io/portfolio/');
               onClose();
             }}>
               <button className="button">Copy URL</button>
